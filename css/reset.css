@@ -4,6 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
+*:focus{
+  outline: none;
+}
 
 /* Remove default margin */
 body,

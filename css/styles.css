@@ -332,3 +332,66 @@ header {
   bottom: 80px;
   cursor: pointer;
 }
+.feed__box {
+  background-color: var(--fb-whitebg);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+  padding: 20px;
+  flex: none;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
+  margin-bottom: 20px;
+}
+.newpost {
+  display: flex;
+  margin-bottom: 10px;
+}
+.newpost__user-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.newpost input[type="text"] {
+  border: none;
+  border-radius: 25px;
+  background-color: var(--fb-bgcolor);
+  width: 100%;
+  padding: 0 15px;
+}
+.newpost__line {
+  height: 2px;
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--button-link);
+}
+.hline{
+  height: 1px;
+  background: var(--button-link);
+  margin-bottom: 15px;
+  display: block;
+}
+.post-types {
+  display: flex;
+  justify-content: space-between;
+}
+.post-types__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.post-types__item .fas, .post-types__item .far {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.post-types__item .fa-video {
+  color: var(--fb-red);
+}
+.post-types__item .fa-photo-video {
+  color: var(--fb-green);
+}
+.post-types__item .fa-laugh-beam {
+  color: var(--fb-yellow);
+}

@@ -62,6 +62,13 @@ header {
   position: relative;
   margin-left: 10px;
 }
+.header__mobile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  display: none;
+}
 .header__logo-search .fa-search {
   position: absolute;
   top: 12px;
@@ -77,6 +84,7 @@ header {
   padding-left: 35px;
   font-weight: 300;
   border: none;
+  margin-right: 20px;
 }
 .header__menu-tabs {
   display: flex;
@@ -587,4 +595,74 @@ header {
   right: -5px;
   font-weight: 700;
   z-index: 3;
+}
+
+
+@media only screen and (max-width: 1300px){
+  .header__menu-tabs{
+    display: none;
+  }
+  .feed {
+    width: 100%;
+  }
+  .stories__next-btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .sidenav{
+    display: none;
+  }
+  .feed__box {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header__account {
+    display: none;
+  }
+  .header__user-img{
+    display: none;
+  }
+  .header__user-name{
+    display: none;
+  }
+  .header__mobile-btn{
+    display: flex;
+  }
+  .header__logo-search .fa-search{
+    left: 12px;
+    top: 13px;
+  }
+  .header__logo-section{
+    width: 100%;
+  }
+  .header__logo-search{
+    margin-right: 10px;
+    width: 100%;
+  }
+  .header__logo-search input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding-left: 35px;
+    margin-right: 0;
+  }
+  .feed {
+    display: block;
+  }
+  .stories {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    max-width: 100%;
+  }
+  .stories__video-container {
+    flex: 1 0 auto;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  .post-types__title{
+    display: none;
+  }
+ 
 }
